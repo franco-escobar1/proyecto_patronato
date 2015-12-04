@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-name=".*"/>
+  <table-filter match-catalog="panaci" match-name="bitacora"/>
+  <table-filter match-catalog="panaci" match-name="cliente"/>
+  <table-filter match-catalog="panaci" match-name="departamentos"/>
+  <table-filter match-catalog="panaci" match-name="diagnostico_cliente"/>
+  <table-filter match-catalog="panaci" match-name="direc_cliente"/>
+  <table-filter match-catalog="panaci" match-name="direccion_usuario"/>
+  <table-filter match-catalog="panaci" match-name="expediente"/>
+  <table-filter match-catalog="panaci" match-name="formacion_cliente"/>
+  <table-filter match-catalog="panaci" match-name="imag_icon"/>
+  <table-filter match-catalog="panaci" match-name="mantdiag"/>
+  <table-filter match-catalog="panaci" match-name="perfil_usuario"/>
+  <table-filter match-catalog="panaci" match-name="perfiles"/>
+  <table-filter match-catalog="panaci" match-name="telefono_cliente"/>
+  <table-filter match-catalog="panaci" match-name="telefono_usuario"/>
+  <table-filter match-catalog="panaci" match-name="usuarios"/>
+</hibernate-reverse-engineering>

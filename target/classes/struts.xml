@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.action.extension" value="html" />
+
+	<!-- Configuration for the default package. -->
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="index" class="controller.ClienteAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="addnew" class="controller.ClienteAction" method="addNew">
+			<result name="success">/addnew.jsp</result>
+		</action>
+		<action name="process-addnew" class="controller.ClienteAction" method="processAddNew">
+			<result name="error">/addnew.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="update" class="controller.ClienteAction" method="update">
+			<result name="success">/update.jsp</result>
+		</action>
+		<action name="process-update" class="controller.ClienteAction" method="processUpdate">
+			<result name="error">/update.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="search" class="controller.ClienteAction" method="search">
+			<result name="success">/search.jsp</result>
+		</action>
+		<action name="process-search" class="controller.ClienteAction" method="processSearch">
+			<result name="success">/search.jsp</result>
+		</action>
+		<action name="diagnostico" class="controller.DiagnosticoAction" method="diagnostico">
+			<result name="success">/frm_diagnostico.jsp</result>
+		</action>
+		<action name="process-diagnostico" class="controller.DiagnosticoAction" method="processDiagnostico">
+			<result name="error">/frm_diagnostico.jsp</result>
+			<result name="success">/frm_diagnostico.jsp</result>
+		</action>
+		<action name="direccion" class="controller.DireccionAction" method="direccion">
+			<result name="success">/frm_direccion.jsp</result>
+		</action>
+		<action name="process-direccion" class="controller.DireccionAction" method="processDireccion">
+			<result name="error">/frm_direccion.jsp</result>
+			<result name="success">/frm_direccion.jsp</result>
+		</action>
+		<action name="formacion" class="controller.FormacionAction" method="formacion">
+			<result name="success">/frm_formacion.jsp</result>
+		</action>
+		<action name="process-formacion" class="controller.FormacionAction" method="processFormacion">
+			<result name="error">/frm_formacion.jsp</result>
+			<result name="success">/frm_formacion.jsp</result>
+		</action>
+		<action name="telefono" class="controller.TelefonoAction" method="telefono">
+			<result name="success">/frm_telefono.jsp</result>
+		</action>
+		<action name="process-telefono" class="controller.TelefonoAction" method="processTelefono">
+			<result name="error">/frm_telefono.jsp</result>
+			<result name="success">/frm_telefono.jsp</result>
+		</action>
+	</package>
+</struts>

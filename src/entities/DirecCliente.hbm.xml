@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.DirecCliente" table="direc_cliente" catalog="panaci">
+        <id name="idcliente" type="int">
+            <column name="idcliente" />
+        </id>
+            <property name="provincia" type="string">
+                <column name="provincia" length="1000" />
+            </property>
+            <property name="canton" type="string">
+                <column name="canton" length="1000" />
+            </property>
+            <property name="distrito" type="string">
+                <column name="distrito" length="1000" />
+            </property>
+            <property name="otro" type="string">
+                <column name="otro" length="1000" />
+            </property>
+    </class>
+</hibernate-mapping>

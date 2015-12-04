@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.PerfilUsuario" table="perfil_usuario" catalog="panaci">
+        <composite-id name="id" class="entities.PerfilUsuarioId">
+            <key-property name="idusuario" type="int">
+                <column name="idusuario" />
+            </key-property>
+            <key-property name="idperfil" type="int">
+                <column name="idperfil" />
+            </key-property>
+            <key-property name="usuario" type="string">
+                <column name="usuario" length="1000" />
+            </key-property>
+            <key-property name="pass" type="string">
+                <column name="pass" length="1000" />
+            </key-property>
+            <key-property name="permisos" type="string">
+                <column name="permisos" length="1000" />
+            </key-property>
+            <key-property name="imaperf" type="binary">
+                <column name="imaperf" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

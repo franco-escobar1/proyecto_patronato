@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Expediente" table="expediente" catalog="panaci">
+        <id name="idexpe" type="java.lang.Integer">
+            <column name="idexpe" />
+            <generator class="identity" />
+        </id>
+        <property name="idusuario" type="int">
+            <column name="idusuario" not-null="true" />
+        </property>
+        <property name="idcliente" type="int">
+            <column name="idcliente" not-null="true" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" not-null="true" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="1000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

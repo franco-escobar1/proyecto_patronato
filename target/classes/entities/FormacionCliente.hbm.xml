@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.FormacionCliente" table="formacion_cliente" catalog="panaci">
+       <id name="idcliente" type="int">
+            <column name="idcliente" />
+        </id>
+            <property name="escolaridad" type="string">
+                <column name="escolaridad" length="1000" />
+            </property>
+            <property name="ocupacion" type="string">
+                <column name="ocupacion" length="1000" />
+            </property>
+            <property name="carrera" type="string">
+                <column name="carrera" length="1000" />
+            </property>
+            <property name="educEspe" type="string">
+                <column name="educ_espe" length="1000" />
+            </property>
+            <property name="otros" type="string">
+                <column name="otros" length="1000" />
+            </property>
+    </class>
+</hibernate-mapping>

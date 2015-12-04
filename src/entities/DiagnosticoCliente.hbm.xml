@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.DiagnosticoCliente" table="diagnostico_cliente" catalog="panaci">
+       <id name="idcliente" type="int">
+            <column name="idcliente" />
+        </id>
+            <property name="diagnostico" type="string">
+                <column name="diagnostico" length="1000" />
+            </property>
+            <property name="nivelceguera" type="string">
+                <column name="nivelceguera" length="1000" />
+            </property>
+            <property name="origenceguera" type="string">
+                <column name="origenceguera" length="1000" />
+            </property>
+            <property name="otradiscap" type="string">
+                <column name="otradiscap" length="1000" />
+            </property>
+            <property name="comentario" type="string">
+                <column name="comentario" length="1000" />
+            </property>
+    </class>
+</hibernate-mapping>

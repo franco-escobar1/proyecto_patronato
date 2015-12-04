@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.TelefonoCliente" table="telefono_cliente" catalog="panaci">
+        <id name="idcliente" type="int">
+            <column name="idcliente" />
+        </id>
+            <property name="telhabit" type="string">
+                <column name="telhabit" length="1000" />
+            </property>
+            <property name="telmovil" type="string">
+                <column name="telmovil" length="1000" />
+            </property>
+            <property name="teltrab" type="string">
+                <column name="teltrab" length="1000" />
+            </property>
+            <property name="otrostel" type="string">
+                <column name="otrostel" length="1000" />
+            </property>
+    </class>
+</hibernate-mapping>

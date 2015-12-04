@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Cliente" table="cliente" catalog="panaci">
+        <id name="idcliente" type="java.lang.Integer">
+            <column name="idcliente" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="1000" not-null="true" />
+        </property>
+        <property name="primerape" type="string">
+            <column name="Primerape" length="1000" not-null="true" />
+        </property>
+        <property name="segunape" type="string">
+            <column name="Segunape" length="1000" not-null="true" />
+        </property>
+        <property name="cedula" type="string">
+            <column name="Cedula" length="1000" not-null="true" />
+        </property>
+        <property name="nacionalidad" type="string">
+            <column name="Nacionalidad" length="1000" not-null="true" />
+        </property>
+        <property name="fechaNacii" type="date">
+            <column name="FechaNacii" length="10" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="Sexo" length="1000" not-null="true" />
+        </property>
+        <property name="estadoCivil" type="string">
+            <column name="EstadoCivil" length="1000" not-null="true" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="Imagen" />
+        </property>
+        <property name="ingrepor" type="string">
+            <column name="Ingrepor" length="1000" not-null="true" />
+        </property>
+        <property name="coment" type="string">
+            <column name="Coment" length="1000" />
+        </property>
+        <property name="fechaIngre" type="date">
+            <column name="FechaIngre" length="10" not-null="true" />
+        </property>
+        <property name="fuenteInf" type="string">
+            <column name="FuenteInf" length="1000" not-null="true" />
+        </property>
+        <property name="estado" type="string">
+            <column name="Estado" length="1000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">franco</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/panaci</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <mapping resource="entities/Cliente.hbm.xml"/>
+  <mapping resource="entities/DiagnosticoCliente.hbm.xml"/>
+  <mapping resource="entities/FormacionCliente.hbm.xml"/>
+  <mapping resource="entities/DirecCliente.hbm.xml"/>
+  <mapping resource="entities/TelefonoCliente.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

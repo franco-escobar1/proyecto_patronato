@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 14, 2015 11:45:45 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Usuarios" table="usuarios" catalog="panaci">
+        <id name="idusuario" type="java.lang.Integer">
+            <column name="idusuario" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="1000" not-null="true" />
+        </property>
+        <property name="primerape" type="string">
+            <column name="primerape" length="1000" not-null="true" />
+        </property>
+        <property name="segunape" type="string">
+            <column name="segunape" length="1000" not-null="true" />
+        </property>
+        <property name="fechnac" type="string">
+            <column name="fechnac" length="1000" not-null="true" />
+        </property>
+        <property name="nacionalidad" type="string">
+            <column name="nacionalidad" length="1000" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="1000" not-null="true" />
+        </property>
+        <property name="cedula" type="string">
+            <column name="cedula" length="1000" not-null="true" />
+        </property>
+        <property name="estadocivil" type="string">
+            <column name="estadocivil" length="1000" not-null="true" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" />
+        </property>
+        <property name="iddepart" type="int">
+            <column name="iddepart" not-null="true" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="1000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
